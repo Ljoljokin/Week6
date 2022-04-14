@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Marck+Script&display=swap');
+
+body {
+  background-color: rgba(1, 9, 14, 0.767); 
+  text-align: center;
+}
+
+.intro-image {
+  background-attachment: fixed;
+  background-image: url('../img/img1.jpg');
+  background-size: cover;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 85% 72%, 51% 68%, 16% 72%, 0 100%, 0% 35%, 0 0);
+
+}
+
+.intro-image__text {
+  background-color:rgba(255, 235, 205, 0.687);
+  border: 2px solid beige;
+  color:rgb(42, 165, 85);
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  position: relative; /*top-right-bottom-left*/
+  animation: intro-image__text;
+  animation-duration: 3s;
+ }
+ 
+ @keyframes intro-image__text {
+   0% {left: -550px}
+   100% {left: 0}
+ }
+
+.intro-text {
+ height: 100px;
+ background-color: rgba(47, 43, 42, 0.614);
+ padding: 3rem;
+ margin-top: -12rem;
+ color: rgb(228, 9, 9);
+}
+
+.intro-text__textbox h3 {
+ font-size: 2rem;
+ text-transform: uppercase;
+ margin-bottom: 1rem;
+}
+
+.packaging-image {
+ background-attachment: fixed;
+ background-image: url('../img/img2.jpg');
+ background-size: cover;
+ background-position: bottom;
+ height: 550px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.packaging-image__text {
+  background-color:rgba(255, 235, 205, 0.687);
+  border: 2px solid beige;
+  color:rgb(232, 121, 57);
+  display: inline-block;
+  font-size: 3rem;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 1s ease-in-out;
+  position: relative; /*top-right-bottom-left*/
+  animation: packaging-image__text;
+  animation-duration: 3s;
+ }
+ 
+ @keyframes packaging-image__text {
+   0% {right: -550px}
+   100% {right: 0}
+ }
+
+.packaging-text {
+  height: 200px;
+  background-color: rgb(75, 79, 82);
+  padding: 0 15rem;
+}
+
+.packaging-text__textbox h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.tutorials-image {
+  background-attachment: fixed;
+  background-image: url('../img/img3.jpg');
+  background-size: cover;
+  background-position: bottom;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tutorials-image__text {
+  background-color:rgba(209, 171, 106, 0.582);
+  border: 2px solid beige;
+  color:rgb(247, 141, 19);
+  display: inline-block;
+  font-size: 3rem;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative; /*top-right-bottom-left*/
+  animation: tutorials-image__text;
+  animation-duration: 3s;
+ }
+ 
+ @keyframes tutorials-image__text {
+   0% {bottom: -550px}
+   100% {bottom: 0}
+}
+
+.footer {
+ height: 150px;
+ background-color: rgba(67, 71, 79, 0.594);
+ color: rgb(8, 2, 14);
+ font-family: 'Alex Brush', cursive;
+ font-size: 2rem;
+ text-align: center;
+}
+
+.footer ul li {
+ display: inline-block;
+ margin: 1rem;
+}
+
+.footer ul li a {
+ color: rgb(242, 152, 18);
+ text-decoration: none;
+}
+
+.footer ul li:hover {
+  color: brown;
+  transform: scale(1.3);
+}
